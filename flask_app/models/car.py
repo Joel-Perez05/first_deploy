@@ -64,6 +64,7 @@ class Car:
     
     @staticmethod
     def validate_car(car):
+        is_valid = True
         if str(car['price']) == '' or int(car['price']) <= 0:
             flash('car price must be greater than 0', 'create')
             is_valid = False
